@@ -1,0 +1,44 @@
+{
+  "ad87b0ae-889d-4890-87dd-27eda6c02771": {
+    "user_id": "ad87b0ae-889d-4890-87dd-27eda6c02771",
+    "days": [
+      {
+        "day": "Day 1",
+        "total_exercises": 3,
+        "exercises_completed": 3
+      },
+      {
+        "day": "Day 2",
+        "total_exercises": 3,
+        "exercises_completed": 3
+      },
+      {
+        "day": "Day 3",
+        "total_exercises": 3,
+        "exercises_completed": 3
+      }
+    ],
+    "current_streak": 0
+  },
+  "string": {
+    "user_id": "string",
+    "days": [
+      {
+        "day": "Day 1",
+        "total_exercises": 0,
+        "exercises_completed": 0
+      },
+      {
+        "day": "Day 2",
+        "total_exercises": 0,
+        "exercises_completed": 0
+      },
+      {
+        "day": "Day 3",
+        "total_exercises": 0,
+        "exercises_completed": 0
+      }
+    ],
+    "current_streak": 0
+  }
+}

@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Tracker AI - Personalized Workouts</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-content">
+                <div class="logo">
+                    <span class="logo-icon">💪</span>
+                    <h1>Fitness Tracker AI</h1>
+                </div>
+                <p class="tagline">AI-Powered Personalized Workouts</p>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Form Section -->
+            <section id="formSection" class="form-section active">
+                <div class="form-container">
+                    <h2>Let's Create Your Perfect Workout Plan</h2>
+                    <p class="subtitle">Tell us about your fitness goals and we'll generate a personalized routine</p>
+
+                    <form id="userForm" class="fitness-form" novalidate>
+                        <!-- Basic Info -->
+                        <fieldset class="form-fieldset">
+                            <legend>Basic Information</legend>
+                            
+                            <div class="form-group">
+                                <label for="age">Age *</label>
+                                <input type="number" id="age" name="age" min="13" max="120" required>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="gender">Gender</label>
+                                    <select id="gender" name="gender">
+                                        <option value="">Select (Optional)</option>
+                                        <option value="male">Male</option>
+                                        <option value="female">Female</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="height">Height (cm)</label>
+                                    <input type="number" id="height" name="height" min="100" max="250">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="weight">Weight (kg)</label>
+                                    <input type="number" id="weight" name="weight" min="30" max="300" step="0.1">
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <!-- Fitness Goals & Experience -->
+                        <fieldset class="form-fieldset">
+                            <legend>Goals & Experience</legend>
+
+                            <div class="form-group">
+                                <label for="goal">Fitness Goal *</label>
+                                <select id="goal" name="goal" required>
+                                    <option value="">Select your primary goal</option>
+                                    <option value="fat_loss">Fat Loss</option>
+                                    <option value="muscle_gain">Muscle Gain</option>
+                                    <option value="general_fitness">General Fitness</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="experience">Experience Level *</label>
+                                <select id="experience" name="experience" required>
+                                    <option value="">Select your level</option>
+                                    <option value="beginner">Beginner (Little to no training)</option>
+                                    <option value="intermediate">Intermediate (Training 1-3 years)</option>
+                                    <option value="advanced">Advanced (3+ years training)</option>
+                                </select>
+                            </div>
+                        </fieldset>
+
+                        <!-- Equipment & Duration -->
+                        <fieldset class="form-fieldset">
+                            <legend>Equipment & Schedule</legend>
+
+                            <div class="form-group">
+                                <label>Available Equipment *</label>
+                                <div class="checkbox-group">
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" name="equipment" value="bodyweight">
+                                        Bodyweight Only
+                                    </label>
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" name="equipment" value="dumbbells">
+                                        Dumbbells
+                                    </label>
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" name="equipment" value="gym">
+                                        Full Gym
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="duration">Workout Duration (min) *</label>
+                                    <input type="number" id="duration" name="duration" min="15" max="180" value="45" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="daysPerWeek">Days Per Week *</label>
+                                    <select id="daysPerWeek" name="daysPerWeek" required>
+                                        <option value="">Select days</option>
+                                        <option value="3">3 days</option>
+                                        <option value="4">4 days</option>
+                                        <option value="5">5 days</option>
+                                        <option value="6">6 days</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <div class="form-actions">
+                            <button type="submit" class="btn btn-primary btn-large">Generate My Workout</button>
+                        </div>
+
+                        <p class="form-note">* Required fields</p>
+                    </form>
+                </div>
+            </section>
+
+            <!-- Loading Section -->
+            <section id="loadingSection" class="loading-section">
+                <div class="loading-container">
+                    <div class="spinner"></div>
+                    <h2>Creating Your Perfect Workout...</h2>
+                    <div class="quote-container">
+                        <p id="motivationalQuote" class="quote"></p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Workout Display Section -->
+            <section id="workoutSection" class="workout-section">
+                <div class="workout-header">
+                    <h2>Your Weekly Workout Plan</h2>
+                    <div class="progress-container">
+                        <div class="progress-bar">
+                            <div id="progressFill" class="progress-fill" style="width: 0%"></div>
+                        </div>
+                        <div class="progress-stats">
+                            <span id="completionPercentage">0%</span>
+                            <span class="streak">🔥 Streak: <span id="streakCount">0</span> days</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="workoutPlan" class="workout-plan">
+                    <!-- Days will be populated here -->
+                </div>
+
+                <div class="feedback-section">
+                    <p>How was the workout intensity?</p>
+                    <div class="feedback-buttons">
+                        <button id="tooEasyBtn" class="btn btn-secondary">Too Easy - Make Harder</button>
+                        <button id="tooHardBtn" class="btn btn-secondary">Too Hard - Make Easier</button>
+                        <button id="missedDayBtn" class="btn btn-secondary">Missed a Day - Adjust Plan</button>
+                    </div>
+                </div>
+
+                <div class="workout-actions">
+                    <button id="newPlanBtn" class="btn btn-primary">Generate New Plan</button>
+                    <button id="exportBtn" class="btn btn-outline">Export Workout</button>
+                </div>
+            </section>
+
+            <!-- Error Section -->
+            <section id="errorSection" class="error-section">
+                <div class="error-container">
+                    <h2>⚠️ Error</h2>
+                    <p id="errorMessage"></p>
+                    <button id="backBtn" class="btn btn-primary">Go Back</button>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>Powered by Google Gemini</p>
+        </footer>
+    </div>
+
+    <!-- Hidden template for workout day -->
+    <template id="dayWorkoutTemplate">
+        <div class="day-workout">
+            <div class="day-header">
+                <h3 class="day-name"></h3>
+                <span class="day-focus"></span>
+                <div class="day-progress">
+                    <span class="day-progress-text">0/0 exercises</span>
+                </div>
+            </div>
+            <div class="exercises-list">
+                <!-- Exercises will be populated here -->
+            </div>
+        </div>
+    </template>
+
+    <!-- Hidden template for exercise -->
+    <template id="exerciseTemplate">
+        <div class="exercise-item">
+            <div class="exercise-checkbox">
+                <input type="checkbox" class="exercise-check">
+            </div>
+            <div class="exercise-details">
+                <h4 class="exercise-name"></h4>
+                <div class="exercise-specs">
+                    <span class="specs"></span>
+                    <span class="rest"></span>
+                </div>
+                <p class="exercise-notes"></p>
+            </div>
+        </div>
+    </template>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>

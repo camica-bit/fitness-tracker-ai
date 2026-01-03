@@ -1,0 +1,209 @@
+{
+  "300e3b86-0455-40b7-985d-760b7c10a0d7": [
+    {
+      "user_id": "300e3b86-0455-40b7-985d-760b7c10a0d7",
+      "week": 1,
+      "days": [
+        {
+          "day": "Day 1: Upper Body A (Strength Focus)",
+          "focus": "Chest, Back, Arms (Strength & Hypertrophy)",
+          "exercises": [
+            {
+              "name": "Barbell Bench Press",
+              "sets": 3,
+              "reps": "5",
+              "rest_seconds": 120,
+              "notes": "Focus on controlled eccentric. Leave 1-2 reps in the tank.",
+              "completed": false
+            },
+            {
+              "name": "Incline Dumbbell Press",
+              "sets": 3,
+              "reps": "8-10",
+              "rest_seconds": 90,
+              "notes": "Control the descent and squeeze the chest at the top.",
+              "completed": false
+            },
+            {
+              "name": "Weighted Pull-ups (or Lat Pulldown if maxing out reps)",
+              "sets": 3,
+              "reps": "6-8",
+              "rest_seconds": 105,
+              "notes": "Use weight belt if possible. Full stretch at the bottom.",
+              "completed": false
+            },
+            {
+              "name": "Barbell Bent-Over Row",
+              "sets": 3,
+              "reps": "8-10",
+              "rest_seconds": 90,
+              "notes": "Maintain strict back posture. Pull towards the lower abdomen.",
+              "completed": false
+            },
+            {
+              "name": "Cable Overhead Triceps Extension",
+              "sets": 3,
+              "reps": "10-12",
+              "rest_seconds": 75,
+              "notes": "Focus on the long head stretch. Keep elbows stationary.",
+              "completed": false
+            },
+            {
+              "name": "Dumbbell Hammer Curls",
+              "sets": 3,
+              "reps": "10-12",
+              "rest_seconds": 60,
+              "notes": "Focus on contracting the brachialis and brachioradialis.",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "day": "Day 2: Lower Body A (Quads Bias)",
+          "focus": "Quads, Hamstrings, Calves (Hypertrophy)",
+          "exercises": [
+            {
+              "name": "High-Bar Barbell Squat",
+              "sets": 3,
+              "reps": "6",
+              "rest_seconds": 120,
+              "notes": "Deep squat depth for maximal quad activation. Controlled descent.",
+              "completed": false
+            },
+            {
+              "name": "Leg Press",
+              "sets": 3,
+              "reps": "10-12",
+              "rest_seconds": 90,
+              "notes": "Use a high foot placement for more quad emphasis. Aggressive pump.",
+              "completed": false
+            },
+            {
+              "name": "Romanian Deadlift (RDL)",
+              "sets": 3,
+              "reps": "8-10",
+              "rest_seconds": 90,
+              "notes": "Focus on hamstring stretch. Only lower until tension is maximized.",
+              "completed": false
+            },
+            {
+              "name": "Leg Extension (Drop Set)",
+              "sets": 3,
+              "reps": "12-15",
+              "rest_seconds": 75,
+              "notes": "Perform a drop set on the final set (reduce weight 30%, max reps).",
+              "completed": false
+            },
+            {
+              "name": "Seated Calf Raise",
+              "sets": 4,
+              "reps": "12-15",
+              "rest_seconds": 60,
+              "notes": "Full stretch at the bottom, squeeze at the top.",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "day": "Day 3: Upper Body B (Volume/Back Bias)",
+          "focus": "Back, Shoulders, Arms (Volume)",
+          "exercises": [
+            {
+              "name": "Seated Dumbbell Overhead Press",
+              "sets": 3,
+              "reps": "6-8",
+              "rest_seconds": 105,
+              "notes": "Use full range of motion. Brace core strongly.",
+              "completed": false
+            },
+            {
+              "name": "Neutral Grip Cable Row",
+              "sets": 3,
+              "reps": "10-12",
+              "rest_seconds": 75,
+              "notes": "Focus on rowing with the elbows, squeezing shoulder blades together.",
+              "completed": false
+            },
+            {
+              "name": "V-Bar Pulldown (Close Grip)",
+              "sets": 3,
+              "reps": "10-12",
+              "rest_seconds": 75,
+              "notes": "Emphasize lat contraction and stretch.",
+              "completed": false
+            },
+            {
+              "name": "Chest Dips (Forward Lean)",
+              "sets": 3,
+              "reps": "8-12",
+              "rest_seconds": 90,
+              "notes": "If necessary, add weight. Lean forward to target the chest.",
+              "completed": false
+            },
+            {
+              "name": "Dumbbell Lateral Raise (Superset)",
+              "sets": 4,
+              "reps": "12-15",
+              "rest_seconds": 60,
+              "notes": "Strict form, raise weight slightly above parallel. Superset with Face Pulls.",
+              "completed": false
+            },
+            {
+              "name": "Cable Face Pulls (Superset)",
+              "sets": 4,
+              "reps": "15-20",
+              "rest_seconds": 60,
+              "notes": "Focus on external rotation and rear delt contraction. Superset with Lateral Raises.",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "day": "Day 4: Lower Body B (Hamstring/Glute Bias & Core)",
+          "focus": "Hamstrings, Glutes, Quads (Volume & Isolation)",
+          "exercises": [
+            {
+              "name": "Conventional Deadlifts (or Trap Bar if preferred)",
+              "sets": 3,
+              "reps": "5",
+              "rest_seconds": 150,
+              "notes": "Focus on maximal tension and explosive lockout. Use moderate RPE.",
+              "completed": false
+            },
+            {
+              "name": "Bulgarian Split Squats (Dumbbell)",
+              "sets": 3,
+              "reps": "8-10 per leg",
+              "rest_seconds": 90,
+              "notes": "Control the negative. Focus on depth and stability.",
+              "completed": false
+            },
+            {
+              "name": "Lying Hamstring Curls",
+              "sets": 3,
+              "reps": "10-12",
+              "rest_seconds": 75,
+              "notes": "Hold the peak contraction for 1 second on each rep.",
+              "completed": false
+            },
+            {
+              "name": "Glute-Ham Raise (GHR) or Reverse Hyperextension",
+              "sets": 3,
+              "reps": "10-12",
+              "rest_seconds": 75,
+              "notes": "If GHR is too difficult, substitute with weighted hyperextensions focusing on glutes/hams.",
+              "completed": false
+            },
+            {
+              "name": "Hanging Leg Raises (Straight Leg)",
+              "sets": 3,
+              "reps": "10-15",
+              "rest_seconds": 60,
+              "notes": "Focus on lower abdominal engagement. Use straps if grip is limiting.",
+              "completed": false
+            }
+          ]
+        }
+      ],
+      "total_days_in_week": 4,
+      "generated_at": 
