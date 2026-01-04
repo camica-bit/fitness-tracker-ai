@@ -1,15 +1,15 @@
 {
   "300e3b86-0455-40b7-985d-760b7c10a0d7": {
     "user_id": "300e3b86-0455-40b7-985d-760b7c10a0d7",
-    "age": 18,
+    "age": 19,
     "gender": "male",
-    "height_cm": 180,
-    "weight_kg": 65.0,
-    "fitness_goal": "general_fitness",
+    "height_cm": 183,
+    "weight_kg": 67.0,
+    "fitness_goal": "muscle_gain",
     "experience_level": "beginner",
-    "available_days_per_week": 4,
+    "available_days_per_week": 3,
     "equipment": [
-      "bodyweight"
+      "gym"
     ]
   }
 }
