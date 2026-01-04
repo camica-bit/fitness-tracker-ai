@@ -427,10 +427,6 @@ Edit `prompts.py` to modify:
 - Network latency may affect speed
 - Gemini API rate limits (free tier: 15 requests/minute)
 
-## 📄 License
-
-This hackathon MVP is provided as-is for educational and demonstration purposes.
-
 ## 🙋 Support
 
 For issues or questions:
@@ -438,21 +434,6 @@ For issues or questions:
 2. Review FastAPI docs: https://fastapi.tiangolo.com/
 3. Check Gemini API docs: https://ai.google.dev/
 
-## 🎯 Hackathon Key Points
-
-This MVP demonstrates:
-
-✅ **Clean Architecture** - Modular, well-organized code
-✅ **API Design** - RESTful endpoints with proper validation
-✅ **AI Integration** - Effective use of Gemini API with smart prompting
-✅ **UI/UX** - Professional dark theme, responsive design
-✅ **Feature Completeness** - Full workflow from profile to tracking
-✅ **Error Handling** - Comprehensive error management
-✅ **Documentation** - Clear setup and usage instructions
-✅ **MVP-Ready** - Demo-ready with smooth user flow
-
-Perfect for a hackathon presentation demonstrating AI integration with practical fitness applications!
-
 ---
 
-Built with ❤️ using FastAPI, Google Gemini, and Vanilla JavaScript
+Built using FastAPI, Google Gemini, and Vanilla JavaScript
