@@ -2,7 +2,7 @@
 
 An AI-powered fitness application that generates personalized weekly workout routines using Google Gemini API. This hackathon MVP features a clean, modern dark-theme UI with real-time workout tracking and intelligent regeneration based on user feedback.
 
-## ✨ Features
+## ✨ Features 
 
 - **AI-Powered Workout Generation**: Uses Google Gemini to create personalized, safety-focused routines
 - **Smart Personalization**: Considers age, fitness goal, experience level, equipment, and available time
